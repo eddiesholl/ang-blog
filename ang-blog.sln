@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ang-blog", "ang-blog\ang-blog.csproj", "{5AFE2F36-3C41-4FE7-B7FC-B29131DDF5FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{4A6CD5FE-7982-4E93-BEB3-60CDF8486CBF}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{C2B1E113-06C8-4647-9836-5192F614B77B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ang-blog-WAWS-dev.json = PublishScripts\Configurations\ang-blog-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AFE2F36-3C41-4FE7-B7FC-B29131DDF5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFE2F36-3C41-4FE7-B7FC-B29131DDF5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFE2F36-3C41-4FE7-B7FC-B29131DDF5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFE2F36-3C41-4FE7-B7FC-B29131DDF5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2B1E113-06C8-4647-9836-5192F614B77B} = {4A6CD5FE-7982-4E93-BEB3-60CDF8486CBF}
+	EndGlobalSection
+EndGlobal
