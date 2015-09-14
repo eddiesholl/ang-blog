@@ -175,6 +175,7 @@
     <Compile Include="Controllers\BlogEntryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ViewSwitchController.cs" />
     <Compile Include="Data\DocumentDBRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -185,6 +186,8 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Views\AngularViewEngine.cs" />
+    <Compile Include="Views\NativeViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -247,6 +250,7 @@
     <Content Include="Views\BlogEntry\Edit.cshtml" />
     <Content Include="Views\BlogEntry\Delete.cshtml" />
     <Content Include="Views\BlogEntry\Details.cshtml" />
+    <Content Include="Views\Shared\_ManagePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
