@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Ang_Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ang_Index</h2>
+
+@section scripts{
+
+    <script src="~/Scripts/angular/BlogEntryClient.js">
+    </script>
+}
+
+<div ng-app="BlogEntryApp" class="container">
+        <br />
+        <br />
+        <div class="row">
+        <input type="text" placeholder="Search Student" ng-model="searchStudent" />
+        <br />
+        <div ng-controller="BlogEntryController">
+            <table class="table">
+                <tr ng-repeat="r in blogEntries | filter : searchStudent">
+                    <td>{{ r.ID }}</td>
+                    <td>{{ r.Title }}</td>
+                    <td>{{ r.Content }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+

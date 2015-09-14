@@ -15,8 +15,19 @@ namespace ang_blog.Controllers
         // GET: BlogEntry
         public ActionResult Index()
         {
-            var items = DocumentDBRepository<BlogEntryModel>.GetItems(b => true/*b.IsApproved*/).OrderByDescending(b => b.ApprovedOn);
-            return View(items);
+            var items = LoadBlogEntries();
+            return PartialView(items);
+        }
+
+        public JsonResult GetBlogEntries()
+        {
+            var items = LoadBlogEntries();
+            return Json(items, JsonRequestBehavior.AllowGet);
+        }
+
+        private IEnumerable<BlogEntryModel> LoadBlogEntries()
+        {
+            return DocumentDBRepository<BlogEntryModel>.GetItems(b => true/*b.IsApproved*/).OrderByDescending(b => b.ApprovedOn);
         }
 
         public ActionResult Details(string id)
