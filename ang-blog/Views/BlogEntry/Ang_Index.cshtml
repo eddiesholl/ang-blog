@@ -16,14 +16,21 @@
         <br />
         <br />
         <div class="row">
-        <input type="text" placeholder="Search Student" ng-model="searchStudent" />
+        <input type="text" placeholder="Search posts" ng-model="searchStudent" />
         <br />
         <div ng-controller="BlogEntryController">
             <table class="table">
                 <tr ng-repeat="r in blogEntries | filter : searchStudent">
-                    <td>{{ r.ID }}</td>
-                    <td>{{ r.Title }}</td>
-                    <td>{{ r.Content }}</td>
+                    <td>
+                        <div class="h1">{{ r.Title }}</div>
+                        <br/>
+                        <div class="text-muted">Posted on {{ r.ApprovedOn | jsDate | date:'medium' }}</div>
+                        <em class="text-muted">{{ r.ID }}</em>
+                        <br/>
+                        <br />
+                        <div>{{ r.Content }}</div>
+                        <br />
+                    </td>
                 </tr>
             </table>
         </div>

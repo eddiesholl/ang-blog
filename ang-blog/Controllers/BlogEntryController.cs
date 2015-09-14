@@ -19,6 +19,7 @@ namespace ang_blog.Controllers
             return PartialView(items);
         }
 
+        [OutputCache(Duration = 0)]
         public JsonResult GetBlogEntries()
         {
             var items = LoadBlogEntries();
