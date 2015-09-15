@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>ang-blog</id>
+		<version>0.1.0</version>
+		<title>ang-blog</title>
+		<authors>eddiesholl</authors>
+		<description>Simple MVC app with client view selection</description>
+	</metadata>
+	<files>
+		<file src="bin/*.dll" target="bin" />
+		<file src="Content/**/*.*" target="content" />
+		<file src="Scripts/**/*.*" target="scripts" />
+		<file src="Views/**/*.*" target="views" />
+		<file src="*.*" target="." />
+	</files>
+</package>
