@@ -8,10 +8,10 @@
 		<description>Simple MVC app with client view selection</description>
 	</metadata>
 	<files>
-		<file src="bin/*.dll" target="bin" />
-		<file src="Content/**/*.*" target="content" />
-		<file src="Scripts/**/*.*" target="scripts" />
-		<file src="Views/**/*.*" target="views" />
-		<file src="*.*" target="." />
+		<file src="ang-blog/bin/*.dll" target="bin" />
+		<file src="ang-blog/Content/**/*.*" target="content" />
+		<file src="ang-blog/Scripts/**/*.*" target="scripts" />
+		<file src="ang-blog/Views/**/*.*" target="views" />
+		<file src="ang-blog/*.*" target="." />
 	</files>
 </package>
