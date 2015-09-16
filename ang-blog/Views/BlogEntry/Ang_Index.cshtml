@@ -22,14 +22,17 @@
             <table class="table">
                 <tr ng-repeat="r in blogEntries | filter : searchStudent">
                     <td>
-                        <div class="h1">{{ r.Title }}</div>
+                        <div class="h1" ng-cloak>{{ r.Title }}</div>
                         <br/>
-                        <div class="text-muted">Posted on {{ r.ApprovedOn | jsDate | date:'medium' }}</div>
-                        <em class="text-muted">{{ r.ID }}</em>
+                        <div class="text-muted" ng-cloak>Posted on {{ r.ApprovedOn | jsDate | date:'medium' }}</div>
+                        <em class="text-muted" ng-cloak>{{ r.ID }}</em>
                         <br/>
                         <br />
-                        <div>{{ r.Content }}</div>
+                        <div ng-cloak>{{ r.Content }}</div>
                         <br />
+                        <a ng-href="BlogEntry/Edit/{{r.ID}}">Edit</a>
+                        <a ng-href="BlogEntry/Details/{{r.ID}}">Details</a>
+                        <a ng-href="BlogEntry/Delete/{{r.ID}}">Delete</a>
                     </td>
                 </tr>
             </table>

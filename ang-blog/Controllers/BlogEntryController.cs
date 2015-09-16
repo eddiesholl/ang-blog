@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace ang_blog.Controllers
 {
+    [OutputCache(Duration = 0)]
     public class BlogEntryController : Controller
     {
         // GET: BlogEntry
@@ -60,7 +61,7 @@ namespace ang_blog.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ID,Title,Content,IsApproved,CreatedOn")] BlogEntryModel item)
+        public async Task<ActionResult> Edit([Bind(/*Include = "ID,Title,Content,IsApproved,CreatedOn"*/)] BlogEntryModel item)
         {
             if (ModelState.IsValid)
             {
