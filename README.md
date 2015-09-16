@@ -6,3 +6,4 @@ This is a prototype blog implementation in MVC. It allows for parallel view impl
 
 Current view implementations include native razor views, and angular. Next up should be reactjs.net.
 
+An instance of the site is currently available at http://ang-blog.azurewebsites.net/
